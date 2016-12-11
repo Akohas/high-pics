@@ -1,7 +1,8 @@
 module.exports = function(){
+
 	var header = $('.header');
 
-	alert();
+
 
 	headerOnScroll();
 
@@ -11,7 +12,6 @@ var scrollTimeOut;
 	
 	clearTimeout(scrollTimeOut);
 	scrollTimeOut = setTimeout(function(){
-		
 		headerOnScroll();
 
 	}, 100);	
@@ -22,13 +22,13 @@ var scrollTimeOut;
 function headerOnScroll(){
  	var scrolled = $(window).scrollTop();
 
- 	console.log(123);
+
 
  	if( scrolled > 300){
- 		(!header.hassClass('state-fix') ? header.addClass('state-fix') : return);
- 		headerAnimate();
+ 		 header.addClass('fixed');		
  	}else{
- 		header.removeClass('state-fix');
+ 		header.removeClass('fixed');
  	}
+}
 
 }
