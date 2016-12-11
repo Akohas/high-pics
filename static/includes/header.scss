@@ -1,0 +1,64 @@
+
+.header{
+	position: absolute;
+	width: 100%;
+	padding: 0px 120px 80px;
+	top: 0px;
+	@include clearfix;
+	&__nav{
+		margin-top: 50px;
+		font-size: 0px;
+		float: left;
+		position: relative;
+		z-index: 10;
+	}
+	&__nav-item{
+		display: inline-block;
+		font-size: 24px;
+		font-weight: bold;
+		position: relative;
+		padding: 20px;
+		text-align: center;
+		text-transform: uppercase;
+		text-decoration: none;
+		color: #b2b2b2;
+		border-top: solid 4px  #b2b2b2;
+		&:hover,
+		&:focus,
+		&:active{
+			color: #000;
+			border-color: #000;
+		}
+	}
+	&__logo{
+		position: absolute;
+		left: 0px;
+		right: 0px;
+		text-align: center;
+		z-index: 1;
+	}
+	&__search{
+ 		float: right;
+ 		padding-top: 50px;
+ 		z-index: 10;
+ 		position: relative;
+	}
+	&__search-field{
+	height: 54px;
+	width:277px;
+	border-style: solid;
+	border-width: 3px;
+	border-radius: 50px;
+	border-color: #b2b2ae;
+	color: #000;
+	padding: 0 20px 0;
+	background: url(../../img/search.svg) no-repeat 230px 12px;
+	background-size: 23px;
+
+	}
+	&__userpic{
+		float: right;
+		padding-left: 36px;
+		border-radius: 50px;
+	}
+}

@@ -1,0 +1,31 @@
+@import 'variables';
+@import 'mixins';
+
+
+
+.socki{
+	padding-top: 256px;
+
+}
+
+.wrapper{
+	width: 1170px;
+	margin: 0 auto;
+	&__main{
+		margin-top: 80px;
+	}
+	&__header{
+		width: 100%;
+		padding: 0 260px;
+	}
+}
+
+
+
+
+
+.fixed{
+	position: fixed !important;
+	background-color: rgba(255,255,255,0.5);
+}
+
