@@ -1,12 +1,242 @@
+@media screen and (min-width: 1024px) {
+	.networks{
+		&__item{
+			height: 38px;
+			margin-right: 22px;
+		}
+		&__facebook{
+			height: 41px;
+			padding: 0px;
+			margin-right: 0px;
+		}
+	}
+	.socki{
+	padding-top: 256px;
+	}
+	.main-block{
+		&__item{
+			margin-top: 73px;
+			@media screen and (width: 768px){
+				margin-top: 40px;
+			}
+		}
+		&__button-more{
+			
+			margin-top: 60px;
+				font-size: 26px;
+	 		width: 400px;
+	 		height: 60px;
+	 		padding-top: 15px;
+		}
+	}
+	.button-add-photo{
+		@media screen and (width: 768px){
+			width: 180px;
+			height: 30px;
+		}
+		width: 270px;
+		height: 50px;
+		margin: 60px auto 0;
+		font-size: 20px;
+	}
+	.photo-block{
 
+		&__buttons{
+			margin-top: 20px;
+
+		}
+		&__like-button{
+			padding: 15px 15px 15px 44px;
+			height: 51px;
+			font-size: 18px;
+			background-size: 27px;
+			background: url(../../img/like.svg) no-repeat 9px 11px;
+			&:hover{
+				background: #fe006c url(../../img/like-active.svg) no-repeat 12px 12px ;
+				background-size: 27px;
+				border: none;
+				color: #fff;
+				padding: 17px 16px 16px 46px;
+			}
+		}
+		&__add-button{
+			margin-left: 20px;
+			height: 51px;
+			width: 65px;
+			background: url(../../img/plus.svg) no-repeat 19px 13px;
+			&:hover{
+				background: #2aaa07 url(../../img/plus-active.svg) no-repeat 20px 14px;
+				border: none;
+			
+			}
+		}
+		&__author{
+	 		font-size: 24px;
+	 		margin-top: 27px;
+	 		display: block;
+	 	}
+	 	&__author-mobile{
+	 		display: none;
+	 	}
+	 	&__userpic-mobile{
+	 		display: none;
+	 	}
+	 	 &__button-download{
+	 	 	
+	 		font-size: 18px;
+	 	width: 160px;
+	 	height: 43px;
+	 	margin-top: 20px;
+	 	padding-top: 10px;
+	 	&:before{
+	 		content: "Скачать";
+	 	}
+	
+	 }
+	 &__img-elem{
+	 	@media screen and (max-width: 1024px){
+			width: 1024px;
+	 	}
+	}
+	}
+}
+
+
+
+@media screen and (max-width: 768px) {
+	.networks{
+		&__item{
+			height: 23px;
+			margin-right: 20px;
+		}
+		&__facebook{
+			height: 26px;
+			padding: 0px;
+			margin-right: 0px;
+		}
+	}
+	.main-block{
+		&__item{
+			padding-top: 35px;
+		}
+		&__button-more{
+		@media screen and (max-width: 768px) {
+			
+				width: 200px;
+				height: 35px;
+				margin: 30px auto;
+				font-size: 16px;
+				padding-top: 10px;
+			}
+
+	}
+}
+	.socki{
+		@media screen and (max-width: 425px) {
+			padding-top: 70px;
+		}
+		padding-top: 100px;
+	}
+	.button-add-photo{
+		font-size: 10px;
+		width: 140px;
+		height: 24px;
+		margin: 20px auto 0;
+	}
+	.photo-block{
+		&__img-elem{
+			width: 100%;
+		}
+		&__buttons{
+			margin-top: 20px;
+				
+		}
+
+		&__like-button{
+			margin-left: 15px;
+			padding: 7px 8px 5px 34px;
+			height: 35px;
+			font-size: 12px;
+			background: url(../../img/like.svg) no-repeat 6px 5px;
+			&:hover{
+				background: #fe006c url(../../img/like-active.svg) no-repeat 6px 5px ;
+				border: none;
+				color: #fff;
+				padding: 8px 9px 6px 35px;
+			}
+		}
+		&__add-button{
+			margin-left: 10px;
+			width: 51px;
+			height: 35px;
+			background: url(../../img/plus.svg) no-repeat 13px 5px;
+			&:hover{
+				background: #2aaa07 url(../../img/plus-active.svg) no-repeat 13px 5px;
+				border: none;
+			}
+		}
+		&__author{
+	 		font-size: 17px;
+	 		margin-top: 27px;
+	 		vertical-align: middle;
+	 		display: block;
+	 		@media screen and (max-width: 425px){ 
+	 			display: none;
+	 		}
+	 	}
+	 	&__mobile-block{
+	 		padding: 0px 20px 10px;
+	 	}
+	 	&__userpic-mobile{
+	 		display: none;
+	 		@media screen and(max-width: 425px){
+	 			display: inline-block;
+	 			width: 34px;
+	 			vertical-align: middle;
+	 			text-decoration: underline;
+
+	 		}
+	 	}
+	 	&__author-mobile{
+	 		display: none;
+	 		@media screen and (max-width: 425px){ 
+				color: #7a7a7a;	
+				font-size: 16px;
+				vertical-align: middle;
+				display: inline-block;
+				margin-left: 10px;
+				text-decoration: underline;
+	 		}
+	 	}
+	 &__button-download{
+	 		font-size: 15px;
+    	width: 115px;
+    	height: 35px;
+    	margin-top: 20px;
+   		padding-top: 8px;
+    	margin-right: 15px;
+				&:before{
+					content: "Скачать";
+				}
+    	@media screen and (max-width: 425px){ 
+				margin-top: 20px;
+				margin-right: 15px;
+				background: url(../../img/download.svg) no-repeat 20px 8px;
+				background-size: 20px;
+				width: 61px;
+				&:before{
+    		content: "";
+    	}
+    	}
+    }
+	}
+}
 
 
 .networks{
 	text-align: center;
 	&__item{
 		padding: 0 0 4px;
-		height: 38px;
-		margin-right: 22px;
 		display: inline-block;
 		opacity: 0.4;
 		&:hover{
@@ -14,48 +244,34 @@
 		}
 	}
 	&__facebook{
-		height: 41px;
-		padding: 0px;
-		margin-right: 0px;
-	}
-	
-
+			padding: 0;
+		}
 }
 
 .button-add-photo{
 	background-color: #000;
 	border-radius: 50px;
-	text-align: center;
-	vertical-align: middle;
 	color: #fff;
 	text-transform: uppercase;
-	width: 270px;
-	height: 50px;
 	border-style: none;
-	font-size: 20px;
 	font-weight: bold;
 	display: block;
 	outline: none;
-	margin: 60px auto 0;
 	cursor: pointer;
 
 	}
 
 
 	.main-block{
-		&__item{
-			margin-top: 73px;
-		}
+	
+
 		&__button-more{
-			margin-top: 60px;
-	 		width: 100%;
-	 		height: 60px;
+
 	 		text-align: center;
 	 		background-color: #000;
 	 		color: #fff;
 	 		border-radius: 24px;
-	 		padding-top: 15px;
-	 		font-size: 26px;
+	 	
 	 		cursor: pointer;
 	 }
 	}
@@ -73,82 +289,53 @@
 		&__buttons{
 			float: left;
 			vertical-align: middle;
-			padding-top: 21px;
 			position: relative;
 			z-index: 10;
 		}
 		&__like-button{
 			border-radius: 20px;
-			border: solid 1px #4b4b4b;
-			padding: 15px 15px 15px 44px;
-			height: 51px;
+			border: solid 2px #929292;
 			background-color: #fff;
 			font-weight: bold;
-			font-size: 18px;
-			background: url(../../img/like.svg) no-repeat 9px 11px;
-			background-size: 27px;
 			display: inline-block;
 			vertical-align: middle;
 			cursor: pointer;
 			outline: none;
-			&:hover{
-				background: #fe006c url(../../img/like-active.svg) no-repeat 12px 12px ;
-				background-size: 27px;
-				border: none;
-				color: #fff;
-				padding: 17px 16px 16px 46px;
-			}
 		}
 		&__add-button{
 			vertical-align: middle;
 			display: inline-block;
-			margin-left: 30px;
 			border-radius: 20px;
-			border: solid 1px #4b4b4b;
-			width: 65px;
-			height: 51px;
+			border: solid 2px #929292;
 			background-color: #fff;
-			background: url(../../img/plus.svg) no-repeat 17px 11px;
-			background-size: 27px;
 			cursor: pointer;
 			outline: none;
-			&:hover{
-				background: #2aaa07 url(../../img/plus-active.svg) no-repeat 19px 12px;
-				background-size: 27px;
-				border: none;
-			}
+
 		}
 		&__desc{
 			position: relative;
 		}
 	 	&__author{
-	 		font-size: 24px;
-	 		color: #7a7a7a;
-	 		padding-top: 28px;
+	 		color: #7a7a7a;	
     	position: absolute;
     	text-align: center;
     	width: 100%;
-    	display: block;
     	text-decoration: underline;
     	z-index: 1;
 
 	 }
 	 &__button-download{
+
 	 	cursor: pointer;
 	 	color: #7a7a7a;
 	 	font-weight: bold;
-	 	font-size: 18px;
-	 	width: 160px;
-	 	height: 43px;
-	 	border: solid 2px #4b4b4b;
+	 	border: solid 2px #929292;
 	 	border-radius: 10px;
 	 	float: right;
-	 	margin-top: 21px;
-	 	padding-top: 10px;
 	 	text-align: center;
 	 	vertical-align: middle;
 	 	position: relative;
-			z-index: 10;
+		z-index: 10;
 	 }
 	 
 	}

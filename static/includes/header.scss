@@ -1,11 +1,10 @@
-
-.header{
-	position: absolute;
-	width: 100%;
-	padding: 0px 120px 80px;
-	top: 0px;
-	@include clearfix;
-	&__nav{
+@media screen and (min-width: 768px) {
+ .header{
+ 		@media screen and (max-width: 1025px) {
+ 			padding: 0px 0px 80px;
+ 		}
+ 		padding: 0px 120px 80px;
+ 	&__nav{
 		margin-top: 50px;
 		font-size: 0px;
 		float: left;
@@ -30,19 +29,56 @@
 			border-color: #000;
 		}
 	}
-	&__logo{
-		position: absolute;
-		left: 0px;
-		right: 0px;
-		text-align: center;
-		z-index: 1;
-	}
 	&__search{
  		float: right;
  		padding-top: 50px;
  		z-index: 10;
  		position: relative;
 	}
+ }
+
+
+}
+ 
+@media screen and (max-width: 768px) {
+ .header{
+ 	padding: 0px 0px 77px;
+ 	@media screen and (max-width: 425px) {
+ 		padding: 0px 0px 60px;
+ 	}
+ 	&__nav{
+ 		display: none;
+ 	}
+ 	&__logo-img{
+ 		@media screen and (max-width: 425px) {
+ 			width: 50px;
+ 		}
+ 		width: 60px;
+ 	}
+ 	&__search{
+ 		display: none;
+ 	}
+	}
+}
+
+
+
+
+.header{
+	position: absolute;
+	width: 100%;
+	top: 0px;
+	@include clearfix;
+	
+	
+	&__logo{
+		position: absolute;
+		left: 0px;
+		right: 0px;
+		text-align: center;
+		z-index: 4;
+	}
+
 	&__search-field{
 	height: 54px;
 	width:277px;
@@ -54,6 +90,7 @@
 	padding: 0 20px 0;
 	background: url(../../img/search.svg) no-repeat 230px 12px;
 	background-size: 23px;
+	outline:none;
 
 	}
 	&__userpic{

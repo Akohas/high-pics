@@ -10231,7 +10231,7 @@ return jQuery;
 },{}],3:[function(require,module,exports){
 module.exports = function(){
 
-	var header = $('.header');
+	var header = $('.header-fixed');
 
 
 
@@ -10250,17 +10250,24 @@ var scrollTimeOut;
 });
 
 
+
 function headerOnScroll(){
  	var scrolled = $(window).scrollTop();
 
+ 	if(scrolled > 200){
+ 		header.addClass('fixed');
+ 		$('.header').css('display', 'none');
 
-
- 	if( scrolled > 300){
- 		 header.addClass('fixed');		
  	}else{
  		header.removeClass('fixed');
+ 		$('.header').css('display', 'block');
  	}
+
 }
+
+
+
+
 
 }
 },{}]},{},[1]);
