@@ -1,0 +1,43 @@
+
+
+
+
+
+.footer{
+	@media (max-width: 425px){
+		display: none;
+		} 
+	position: relative;
+	margin-top: 85px;
+	&__logo img{
+		width: 80px;
+	}
+		
+
+	&:before{
+		content: "";
+		width: 100%;
+		z-index: 1;
+		@media screen and (max-width: 425px){
+			width: 0;
+		}
+		height: 5px;
+		background-color: #e5e5e5;
+		position: absolute;
+	}
+	&__logo{
+		display: inline-block;
+		vertical-align: middle;
+		position: relative;
+		padding-top: 20px;
+		left: -10px;
+			
+	}
+	&__desc{
+		display: inline-block;
+		color: $grey-color;
+		vertical-align: middle;
+		font-size: 20px;
+		margin-left: 20px;
+	}
+}

@@ -1,0 +1,201 @@
+
+.networks{
+	text-align: center;
+
+	&__item{
+		padding: 0 0 4px;
+		display: inline-block;
+		opacity: 0.4;
+		height: 26px;
+		width: 26px;
+		margin-right: 22px;
+		&:hover{
+			opacity: 1;
+			transition: 0.3s;
+		}
+	}
+	&__vk{
+		width: 35px;
+	}
+	&__facebook{
+			height: 30px;
+			padding: 0px;
+			margin-right: 0px;
+		}
+}
+
+.socki{
+	padding-top: 170px;
+}
+
+.main-block{
+
+	&__item{
+		margin-top: 73px;		
+	}
+	&__button-more{
+		margin: 0 auto;
+		margin-top: 60px;
+		font-size: 16px;
+	 	width: 230px;
+	 	height: 40px;
+	 	padding-top: 12px;
+	 	text-align: center;
+	 	background-color: #000;
+		color: #fff;
+		border-radius: 24px;
+	 	cursor: pointer;
+	 	text-transform: uppercase;
+	 	font-weight: bold;
+	}
+}
+
+
+.button-add-photo{		
+	width: 230px;
+	height: 40px;
+	margin: 60px auto 0;
+	font-size: 16px;
+	background-color: #000;
+	border-radius: 50px;
+	color: #fff;
+	text-transform: uppercase;
+	border-style: none;
+	font-weight: bold;
+	display: block;
+	outline: none;
+	cursor: pointer;
+}
+
+
+
+	.photo-block{
+		@include clearfix();
+		&:after{
+			content: "";
+			display: table;
+			clear: both;
+		}
+		&__img-elem{
+	 		width: 100%;
+		}
+		&__image{
+			padding: 0 120px 0;
+		}
+		&__desc{
+			position: relative;
+		}
+		&__buttons{
+			display: inline-block;
+			z-index: 10;
+		}
+		&__like-button{
+			border-radius: 13px;
+    	border: solid 2px #929292;
+    	background-color: #fff;
+	    font-weight: bold;
+	    display: inline-block;
+	    vertical-align: middle;
+	    cursor: pointer;
+	    outline: none;
+	    height: 2em;
+	    font-size: 1em;
+	    width: 4.25em;
+	    color: $grey-color;
+  		&:hover{
+  			background-color:#ff4c90;
+  			border-color:#ff4c90;
+  			color: #fff;
+
+  		}
+  		&:hover svg use{
+  			fill: #fff;
+  		}
+  		& span{
+				font-size: 0.8em;
+			} 
+
+		}
+		&__like-button svg{
+			width: 1.3em;
+    	height: 1.3em;
+    	vertical-align: bottom;
+    	margin-right: 0.2em;
+		}
+		&__like-button svg use{
+			fill: #ff4c90;
+		}
+		&__add-button{
+			vertical-align: middle;
+			display: inline-block;
+			border-radius: 13px;
+			border: solid 2px #929292;
+			background-color: #fff;
+			cursor: pointer;
+			outline: none;
+			margin-left: 1em;
+			height: 2em;
+			width: 3.25em;
+			&:hover{
+				background-color:#2aaa07;
+				border-color: #2aaa07;
+			}
+			&:hover svg use{
+				fill: #fff;
+			}
+
+		}
+		&__add-button svg{
+			width: 1.3em;
+    	height: 1.3em;
+    	vertical-align: middle;
+		}
+		&__add-button svg use{
+			fill: #2aaa07;
+		}
+	&__desc{
+			@include clearfix();
+			position: relative;
+			font-size: 20px;
+			text-align: center;
+			padding-top: 20px;
+		}
+	 &__author{
+	 		font-size: 1em;
+    	color: #7a7a7a;
+    	text-decoration: underline;
+    	z-index: 1;
+    	vertical-align: middle;
+    	display: inline-block;
+    	margin: 0 11em;
+
+	 }
+	 &__button-download{
+
+	 	cursor: pointer;
+	 	color: #7a7a7a;
+	 	font-weight: bold;
+	 	border: solid 2px #929292;
+	 	border-radius: 10px;
+	 	text-align: center;
+	 	vertical-align: middle;
+	 	position: relative;
+		z-index: 10;
+	 	font-size: 0.9em;
+	 	width: 8em;
+	 	height: 2.15em;
+	 	display: inline-block;
+	 	padding-top: 0.5em;
+	
+	 }
+	 &__button-download svg{
+	 	display: none;
+	 }
+	 	&__author-mobile{
+	 		display: none;
+	 	}
+	 	&__userpic-mobile{
+	 		display: none;
+	 	}
+	 
+	}

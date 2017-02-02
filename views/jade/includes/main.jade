@@ -1,0 +1,46 @@
+mixin photo(PhotoName)
+	.main-block__item.photo-block
+		.photo-block__mobile-block
+			img(src="../../img/userpic.png").photo-block__userpic-mobile
+			a(href="#").photo-block__author-mobile Иван Иванов
+			.photo-block__image
+				img(src=PhotoName).photo-block__img-elem
+		.photo-block__desc
+			.photo-block__buttons
+				button.photo-block__like-button 
+					svg
+						use(xlink:href="#like")
+					span 10
+				button.photo-block__add-button
+					svg
+						use(xlink:href="#plus")
+			a(href="#").photo-block__author Картушин Алексей
+			.photo-block__button-download 
+				span.photo-block__button-download-text Скачать
+				svg
+					use(xlink:href="#download")
+
+
+.socki
+	.networks
+		a(href="#")
+			svg.networks__instagram.networks__item
+				use(xlink:href="#instagram")
+		a(href="#")
+			svg.networks__twitter.networks__item
+				use(xlink:href="#twitter")
+		a(href="#")
+			svg.networks__vk.networks__item
+				use(xlink:href="#vk")
+		a(href="#")
+			svg.networks__item.networks__facebook
+				use(xlink:href="#facebook")
+
+button.button-add-photo Добавить фото
+
+.main-block
+	+photo('../../img/picture.png')
+	
+	.main-block__button-more Загрузить больше
+
+
