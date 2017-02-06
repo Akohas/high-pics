@@ -15,33 +15,32 @@
 
 
 .header-fixed{
-
+	left: 0px;
 	font-size: 20px;
 	width: 100%;
 	position: absolute;
-	@include clearfix();
-	padding: 10px 120px 10px;
+	padding: 10px 80px 10px;
 	text-align: center;
 	&__logo{
-		display: inline-block;
+    display: inline-block;
 		z-index: 4;
 	}
 	&__logo-img{
 		width: 4em;
 	}
 	&__search-field{
-	height: 2.3em;
-  width: 12em;
-	border-style: solid;
-	border-width: 2px;
-	border-radius: 50px;
-	border-color: #b2b2ae;
-	color: #000;
-	padding-left: 20px;
-	outline:none;
-	background-color: #fff;
-	font-size: 0.9em;
-	padding-right: 30px;
+		height: 2.3em;
+	  width: 12em;
+		border-style: solid;
+		border-width: 2px;
+		border-radius: 50px;
+		border-color: #b2b2ae;
+		color: #000;
+		padding-left: 20px;
+		outline:none;
+		background-color: #fff;
+		font-size: 0.9em;
+		padding-right: 30px;
 
 	}
 	&__search-cont{
@@ -56,28 +55,41 @@
 		right: 0.6em;
 	}
 	&__userpic{
-		float: right;
-		padding-left: 1.5em;
-		border-radius: 50px;
-	}
-	&__userpic img{
 		width: 2.5em;
+		height: 2.5em;
+		float: right;
+		margin-left: 1.5em;
+		border-radius: 50%;
+		margin-top: -3px;
+		&:hover{
+			& svg use{
+				fill: #000;
+			}
+		}
+	}
+	&__userpic svg{
+		width: 100%;
+		height: 100%;
+	}
+	&__userpic svg use{
+		fill: #b2b2b2;
+		transition: 0.3s;
 	}
 	&__nav{
 		margin-top: 30px;
-
 		float: left;
 		position: relative;
 		z-index: 10;
 	}
 	&__nav-item{
+		text-transform: lowercase;
+		font-family: Baron Neue;
 		display: inline-block;
 		font-size: 0.8em;
 		font-weight: bold;
 		position: relative;
 		padding: 1em;
 		text-align: center;
-		text-transform: uppercase;
 		text-decoration: none;
 		color: #b2b2b2;
 		border-top: solid 3px  #b2b2b2;
@@ -91,9 +103,16 @@
 	}
 	&__search{
  		float: right;
- 		padding-top: 30px;
+ 		margin-top: 30px;
  		z-index: 10;
  		position: relative;
 	}
+	
 }
 
+
+
+.active-nav{
+	color: #000;
+	border-color: #000;
+}

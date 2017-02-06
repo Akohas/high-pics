@@ -1,0 +1,34 @@
+mixin set(PhotoName, userpic, author, setName, date)
+	a(href="#").set-block__item
+		.set-block__self-container
+			img(src=PhotoName).set-block__img
+			.set-block__gradient
+			.set-block__info
+				.set-block__date=date
+				.set-block__set-name=setName
+				object
+					a(href="#").set-block__author 
+						img(src=userpic)
+						span=author
+extends main
+block premain
+	.pre-main__header Сеты
+	.pre-main__desc Сеты свободные для использования созданные специально для вас
+						
+block content
+	.wrapper
+		.set-block
+			.set-block__row-lg
+				+set("../../img/picture6.jpg", "../../img/userpic2.jpg", 'Николай Островский', 'Коллекция №101', "01.01.01")
+				+set("../../img/picture2.jpg", "../../img/userpic3.jpg", 'Николай Островский', 'Коллекция №101', "01.01.01")
+			.set-block__row-sm
+				+set("../../img/picture5.jpg", "../../img/userpic.png", 'Иван Иванов', 'Коллекция №101', "01.01.01")
+				+set("../../img/picture3.jpg", "../../img/userpic3.jpg", 'Николай Островский', 'Коллекция №101', "01.01.01")
+				+set("../../img/picture4.jpg", "../../img/userpic.png", 'Николай Островский', 'Коллекция №101', "01.01.01")
+			.set-block__row-lg
+				+set("../../img/picture5.jpg", "../../img/userpic2.jpg", 'Николай Островский', 'Коллекция №101', "01.01.01")
+				+set("../../img/picture3.jpg", "../../img/userpic3.jpg", 'Николай Островский', 'Коллекция №101', "01.01.01")
+			.set-block__row-sm
+				+set("../../img/picture2.jpg", "../../img/userpic.png", 'Иван Иванов', 'Коллекция №101', "01.01.01")
+				+set("../../img/picture4.jpg", "../../img/userpic3.jpg", 'Николай Островский', 'Коллекция №101', "01.01.01")
+				+set("../../img/picture6.jpg", "../../img/userpic.png", 'Николай Островский', 'Коллекция №101', "01.01.01")

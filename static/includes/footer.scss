@@ -1,43 +1,70 @@
 
 
 
-
+img.footer__logo-image{
+	width: 140px;
+}
 
 .footer{
-	@media (max-width: 425px){
-		display: none;
-		} 
-	position: relative;
 	margin-top: 85px;
-	&__logo img{
-		width: 80px;
-	}
-		
-
-	&:before{
-		content: "";
-		width: 100%;
-		z-index: 1;
-		@media screen and (max-width: 425px){
-			width: 0;
-		}
-		height: 5px;
-		background-color: #e5e5e5;
-		position: absolute;
-	}
+	padding-left: 30px;
+	box-shadow: 0px -4px 0px #e5e5e5;
+	@media(max-width: 650px){
+		padding-left: 0;
+	}	
 	&__logo{
 		display: inline-block;
 		vertical-align: middle;
-		position: relative;
 		padding-top: 20px;
-		left: -10px;
+		width: 24%;
+		@media(max-width: 650px){
+			display: none;
+		}
 			
 	}
-	&__desc{
+	&__info{
 		display: inline-block;
-		color: $grey-color;
+		width: 38%;
 		vertical-align: middle;
-		font-size: 20px;
-		margin-left: 20px;
+		text-align: center;
+			@media(max-width: 650px){
+			width: 100%;
+			margin-top: 30px;
+		}
+			
+
+	}
+
+	&__contacts{
+		display: inline-block;
+		width: 38%;
+		vertical-align: middle;
+		text-align: center;
+			@media(max-width: 650px){
+			width: 100%;
+			margin-top: 30px;
+		}
+			
+	}
+	&__link a{
+		text-decoration: underline;
+		color: #b2b2ae;
+		font-size: 16px;
+		&:hover,
+		&:focus{
+			color: #b2b2ae;
+		}
+	}
+	&__link{
+		margin-top: 10px;
+		&:first-child{
+			margin-top: 0px;
+		}
+	}
+	&__header{
+	color: #000;
+	font-family: Baron Neue;
+	font-size: 16px;
+	margin-bottom: 20px;
 	}
 }

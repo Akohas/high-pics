@@ -1,0 +1,40 @@
+extends includes/layout
+block sprites
+	include includes/sprites
+block header
+	.header-fixed
+		.header-fixed__nav
+			a(href="index.html").header-fixed__nav-item лучшее
+			a(href="#").header-fixed__nav-item.active-nav новое
+			a(href="sets.html").header-fixed__nav-item сеты
+		.header-fixed__logo
+			a(href="#")
+				img(src="../../img/logo.png").header-fixed__logo-img
+		.header-fixed__search
+			.header-fixed__search-cont
+				input(type="search" placeholder="Поиск фото..." name="search-field" class="header-fixed__search-field")
+				svg.header-fixed__search-icon
+					use(xlink:href="#search")
+			.header-fixed__userpic
+				a(href="#")
+					img(src="../../img/userpic.png")
+		.header__buttons
+			button.header__login войти
+			button.header__sign-up регистрация
+block content
+	.wrapper
+		include includes/new-content
+block footer
+	include includes/footer
+	.footer-fixed
+		a(href="index.html" class="footer-fixed__item-img")
+			<i class="fa fa-home " aria-hidden="true"></i>
+		a(href="#" class="footer-fixed__item-img").footer-nav-active
+			<i class="fa fa-newspaper-o " aria-hidden="true"></i> 
+		a(href="sets.html" class="footer-fixed__item-img")
+			<i class="fa fa-archive" aria-hidden="true"></i>
+		a(href="#" class="footer-fixed__item-img")
+			<i class="fa fa-search" aria-hidden="true"></i>
+		a(href="index.html" class="footer-fixed__item-span") Лучшее
+		a(href="#" class="footer-fixed__item-span").footer-nav-active Новое
+		a(href="sets.html" class="footer-fixed__item-span") Сеты

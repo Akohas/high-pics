@@ -24,8 +24,21 @@
 		}
 }
 
-.socki{
+.pre-main{
 	padding-top: 170px;
+	&__header{
+		font-size: 24px;
+		font-family: Baron Neue;
+		text-align: center;
+		text-transform: lowercase;
+	}
+	&__desc{
+		text-transform: lowercase;
+		font-size: 16px;
+		font-family: Baron Neue;
+		text-align: center;
+		margin-top: 20px;
+	}
 }
 
 .main-block{
@@ -79,14 +92,12 @@
 		&__img-elem{
 	 		width: 100%;
 		}
-		&__image{
-			padding: 0 120px 0;
-		}
 		&__desc{
 			position: relative;
+			padding: 0 15px 0;
 		}
 		&__buttons{
-			display: inline-block;
+			float: left;
 			z-index: 10;
 		}
 		&__like-button{
@@ -100,7 +111,7 @@
 	    outline: none;
 	    height: 2em;
 	    font-size: 1em;
-	    width: 4.25em;
+	    padding: 0 0.8em;
 	    color: $grey-color;
   		&:hover{
   			background-color:#ff4c90;
@@ -113,13 +124,14 @@
   		}
   		& span{
 				font-size: 0.8em;
+				vertical-align: middle;
 			} 
 
 		}
 		&__like-button svg{
 			width: 1.3em;
     	height: 1.3em;
-    	vertical-align: bottom;
+    	vertical-align: middle;
     	margin-right: 0.2em;
 		}
 		&__like-button svg use{
@@ -136,6 +148,7 @@
 			margin-left: 1em;
 			height: 2em;
 			width: 3.25em;
+			font-size: 1em;
 			&:hover{
 				background-color:#2aaa07;
 				border-color: #2aaa07;
@@ -167,8 +180,15 @@
     	z-index: 1;
     	vertical-align: middle;
     	display: inline-block;
-    	margin: 0 11em;
+    	line-height: 2em;
 
+	 }
+	 &__userpic{
+	 	display: inline-block;
+	 	width: 2em;
+	 	height: 2em;
+	 	vertical-align: middle;
+	 	margin-right: 10px;
 	 }
 	 &__button-download{
 
@@ -183,13 +203,17 @@
 		z-index: 10;
 	 	font-size: 0.9em;
 	 	width: 8em;
-	 	height: 2.15em;
-	 	display: inline-block;
-	 	padding-top: 0.5em;
+	 	height: 2em;
+	 	float: right;
+	 	font-size: 1em;
+	 	
 	
 	 }
 	 &__button-download svg{
 	 	display: none;
+	 }
+	 &__button-download-text{
+	 	line-height: 1.8em;
 	 }
 	 	&__author-mobile{
 	 		display: none;
@@ -199,3 +223,127 @@
 	 	}
 	 
 	}
+
+
+
+	
+
+.set-block{
+
+	font-family: Baron Neue;
+	&__item{
+		display: inline-block;
+		padding-left: 15px;
+		padding-right: 15px;
+		padding-top: 30px;
+		color: #fff;
+		transition: 0.5s;
+
+		
+	}
+	&__self-container{
+		position: relative;
+		font-size: 0;
+		transition: 0.5s;
+		&:hover .set-block__gradient{
+			opacity: 1;
+		}
+	}
+	&__img{
+		width: 100%;	
+		border-radius: 10px;
+		transition: 0.5s;
+	}
+	&__row-lg .set-block__item{
+	width: 50%;
+	@media(max-width: 800px){
+		width: 100%;
+	}
+	}
+	&__row-sm .set-block__item{
+	@media(max-width:800px){
+		width: 100%;
+	}
+	width: 33.3333%;
+	}
+	&__date{
+		left: 20px;
+		font-size: 14px;
+	}
+	&__author{
+		position: absolute;
+		bottom: 20px;
+		left: 20px;
+		font-size: 14px;
+		opacity: 0.8;
+		color: #fff;
+		text-transform: lowercase;
+		text-decoration: none;
+		@media(max-width: 1024px){
+			opacity: 1;
+		}
+		&:hover{
+			opacity: 1;
+		}
+		& img{
+			vertical-align: middle;
+			width: 35px;
+			height: 35px;
+			border-radius: 50%;
+		}
+		& span{
+			vertical-align: middle;
+			margin-left: 10px;
+		}
+	}
+	&__set-name{
+		font-size: 20px;
+		margin-top: 10px;
+	}
+	&__info{
+		position: absolute;
+		width: 100%;
+		height: 100%;
+		top: 0;
+		left: 0;
+		padding: 20px;
+		
+		
+	}
+	&__gradient{
+		position: absolute;
+		width: 100%;
+		height: 100%;
+		top: 0;
+		left: 0;
+		opacity: 0.6;
+		transition: 0.5s;
+		border-radius: 10px;
+		background: -webkit-linear-gradient(rgba(0,0,0,0.6) 0%, transparent 30%, transparent 70%, rgba(0,0,0,0.6) 100%);
+    background: -o-linear-gradient(rgba(0,0,0,0.6) 0%, transparent 30%, transparent 70%, rgba(0,0,0,0.6) 100%);
+    background: linear-gradient(rgba(0,0,0,0.6) 0%, transparent 30%, transparent 70%, rgba(0,0,0,0.6) 100%);
+	}
+}
+
+
+
+
+
+
+.account{
+	text-align: center;
+	&__avatar img{
+		width: 130px;
+		height: 130px;
+		border-radius: 50%;
+	}
+	&__name{
+		font-family: Baron Neue;
+		font-size: 18px;
+		text-transform: lowercase;
+		margin-top: 20px;
+	}
+ 	&__networks{
+ 		margin-top: 20px;
+ 	}
+}

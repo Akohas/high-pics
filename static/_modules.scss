@@ -1,14 +1,16 @@
 @import 'variables';
 @import 'mixins';
 
-
+.footer-nav-active{
+	color: #000 !important;
+}
 
 
 	.wrapper{
-		@media screen and (max-width: 1170px) {
+		@media screen and (max-width: 940px) {
 			width: 100%;
 		}
-	width: 1170px;
+	width: 940px;
 	margin: 0 auto;
 	&__main{
 		margin-top: 80px;
@@ -41,7 +43,7 @@ bottom: 0px;
 position: fixed;
 text-align:center;
 padding: 12px;
-@media screen and (min-width: 500px){
+@media screen and (min-width: 501px){
 	padding: 10px;
 }
 	&__item-img{
