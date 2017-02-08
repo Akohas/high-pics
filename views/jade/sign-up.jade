@@ -1,0 +1,28 @@
+extends includes/layout
+block header
+block content
+	.sign-up
+		.sign-up__logo
+			a(href="index.html")
+				img(src="../../img/logo.png" alt="logo")
+		.sign-up__header 
+			p Регистрация
+			p Добро пожаловать!
+		.sign-up__form
+			.sign-up__firstname
+				p Имя
+				input(type="text" class="sign-up__firstname-field")
+			.sign-up__lastname
+				p Фамилия
+				input(type="text" class="sign-up__lastname-field")
+			.sign-up__email
+				p E-mail
+				input(type="text" class="sign-up__email-field")
+			.sign-up__password
+				p Пароль
+				input(type="password" class="sign-up__password-field")
+			input(type="submit" value="Регистрация").sign-up__submit 
+		.sign-up__link-to-sign-in
+			span Уже зарегистрированы? 
+			a(href="sign-up.html") Войти
+block footer

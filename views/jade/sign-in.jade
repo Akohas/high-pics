@@ -1,0 +1,22 @@
+extends includes/layout
+block header
+block content
+	.sign-in
+		.sign-in__logo
+			a(href="index.html")
+				img(src="../../img/logo.png" alt="logo")
+		.sign-in__header 
+			p Вход
+			p Добро пожаловать обратно!
+		.sign-in__form
+			.sign-in__email
+				p E-mail
+				input(type="text" class="sign-in__email-field")
+			.sign-in__password
+				p Пароль
+				input(type="password" class="sign-in__password-field")
+			input(type="submit" value="Войти").sign-in__submit 
+		.sign-in__link-to-sign-up
+			span Еще не зарегестрированы? 
+			a(href="sign-up.html") Зарегистрироваться
+block footer

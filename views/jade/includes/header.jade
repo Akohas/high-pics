@@ -1,21 +1,40 @@
-
+.modal
+	.modal-buttons
+		.modal-like
+			svg 
+				use(xlink:href="#like")
+			span 100
+		.modal-add
+			svg
+				use(xlink:href="#plus")
+		.modal-download
+			span Скачать
+	.modal-close
+		svg
+			use(xlink:href="#plus")
+	a(href="#").modal-author-cont
+		.modal-userpic
+			img(src="../../img/userpic2.jpg")
+		.modal-author Иван Иванович
 .header-fixed
 	.header-fixed__nav
-		a(href="#").header-fixed__nav-item.active-nav лучшее
-		a(href="#").header-fixed__nav-item новое
-		a(href="#").header-fixed__nav-item сеты
+		a(href="index.html").header-fixed__nav-item лучшее
+		a(href="new.html").header-fixed__nav-item новое
+		a(href="sets.html").header-fixed__nav-item сеты
 	.header-fixed__logo
 		a(href="#")
 			img(src="../../img/logo.png").header-fixed__logo-img
-	.header-fixed__search
+	.header-fixed__form
 		.header-fixed__search-cont
-			form(action="./account.html")
-				input(type="search" placeholder="Поиск фото..." name="search-field" class="header-fixed__search-field")
-				svg.header-fixed__search-icon
-					use(xlink:href="#search")
+			input(type="search" placeholder="Поиск фото..." name="search-field" class="header-fixed__search-field")
+			input(type="submit" class="header-fixed__submit" onclick="location.href = 'search.html'")
+			svg.header-fixed__search-icon
+				use(xlink:href="#search")
 		.header-fixed__userpic
 			a(href="#")
 				img(src="../../img/userpic.png")
-	.header__buttons
-		button.header__login войти
-		button.header__sign-up регистрация
+		.header-fixed__buttons
+			a(href="sign-in.html")
+				.header-fixed__login войти
+			a(href="sign-up.html")
+				.header-fixed__sign-up регистрация

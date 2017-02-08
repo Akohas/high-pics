@@ -1,23 +1,12 @@
 extends main
-block premain
+prepend premain
 	.account
 		.account__avatar
-			img(src="../../img/userpic3.jpg")
+			img(src='../../img/userpic2.jpg')
 		.account__name User Name
+		.account__description Фотограф из России
 		.account__networks
-			a(href="#")
-				svg.networks__instagram.networks__item
-					use(xlink:href="#instagram")
-			a(href="#")
-				svg.networks__twitter.networks__item
-					use(xlink:href="#twitter")
-			a(href="#")
-				svg.networks__vk.networks__item
-					use(xlink:href="#vk")
-			a(href="#")
-				svg.networks__item.networks__facebook
-					use(xlink:href="#facebook")
-block content
+prepend content
 	+photo('../../img/picture2.jpg', '../../img/userpic3.jpg', 'User name', '200')
 	+photo('../../img/picture3.jpg', '../../img/userpic3.jpg', 'User name', '300')
 	+photo('../../img/picture5.jpg', '../../img/userpic3.jpg', 'User name', '267')
