@@ -1,7 +1,7 @@
 
 @media screen and (max-width: 768px) {
  .header-fixed{
-	 	z-index: 1000;
+	 	z-index: 9;
 	 	padding: 0 15px;
 	 	
 	 	&__nav{
@@ -99,6 +99,7 @@
 	 	}
 	 	&__mobile-block{
 	 		padding: 0px 20px 10px;
+	 		display: block;
 	 	}
 	 	&__userpic-mobile{
 	 		display: none;
@@ -107,6 +108,7 @@
 	 			width: 34px;
 	 			vertical-align: middle;
 	 			text-decoration: underline;
+	 			border-radius: 50%;
 
 	 		}
 	 	}
@@ -235,4 +237,51 @@
 
 	}
 }
+
+
+
+
+
+@media(max-width: 768px){
+	.modal-buttons{
+		top: 15px;
+		right: 20px;
+	}
+	.modal-close,
+	.gallery-close{
+		top: 15px;
+		left: 20px;
+	}
+}
+
+
+@media(max-width: 500px){
+	.modal-like{
+		width: 62px;
+    padding-top: 4px;
+    font-size: 14px;
+    height: 29px;
+    & svg{
+    	margin-right: 3px;
+    }
+	}
+	.modal-add{
+		padding-top: 4px;
+		width: 42px;
+    height: 29px;
+	}
+	.modal-download{
+		font-size: 14px;
+		padding-top: 6px;
+		width: 75px;
+    height: 29px;
+	}
+	.modal-close,
+	.gallery-close{
+		padding-top: 4px;
+		width: 42px;
+    height: 29px;
+	}
+}
+
 

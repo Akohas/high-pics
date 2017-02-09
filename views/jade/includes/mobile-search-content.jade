@@ -1,0 +1,8 @@
+extends main 
+block premain 
+	.search-page-mobile
+		input(type="search" placeholder="Поиск фото..." name="search-field" class="search-page-mobile__search-field")
+		input(type="submit" class="search-page-mobile__submit" onclick="location.href = 'search.html'")
+		svg.search-page-mobile__search-icon
+			use(xlink:href="#search")
+block content

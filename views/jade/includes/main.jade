@@ -1,8 +1,8 @@
 mixin photo(PhotoName, userpic, author, likes)
 	.main-block__item.photo-block
-	.photo-block__mobile-block
+		a(href="account.html").photo-block__mobile-block
 			img(src= userpic).photo-block__userpic-mobile
-			a(href="#").photo-block__author-mobile= author
+			.photo-block__author-mobile= author
 		.photo-block__image
 			a(href=PhotoName).photo-link-js
 				img(src=PhotoName).photo-block__img-elem.photo-elem-js

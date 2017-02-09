@@ -1,3 +1,4 @@
+
 @import 'variables';
 @import 'mixins';
 
@@ -35,8 +36,8 @@
 	
 }
 .footer-fixed{
+z-index: 9;
 display: block;
-z-index: 1000;
 background-color: rgba(255,255,255,0.8);
 width: 100%;
 bottom: 0px;
@@ -88,21 +89,28 @@ padding: 12px;
 }
 .modal-img{
 	width: 100%;
-	z-index: 999999999;	
+	z-index: 9999;	
 	cursor: pointer;
-
+	position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+	margin: auto;
 }
 
 .modal{
+	transition: 0.4s;
+	top: 100%;
+	visibility: hidden;
 	width: 100%;
-	z-index: 9999;	
+	z-index: 999;	
 	position: fixed;
 	overflow: auto;
 	height: 100%;
 	margin: 0 auto;
 	font-size: 0;
 	background-color: rgba(0,0,0, 0.5);
-	display: none;
 }
 
 
@@ -150,8 +158,9 @@ padding: 12px;
 	position: absolute;
 	top: 38px;
 	left: 60px;
-	
+	z-index: 9999999;
 	cursor:pointer;
+
 	& svg{
 		width: 23px;
 		height: 23px;
@@ -200,7 +209,7 @@ padding: 12px;
 	float: right;
 	padding-top: 9px;
 	text-align: center;
-	cursor: poiner;
+	cursor: pointer;
 	font-weight: 600;
 	&:hover{
 		opacity: 0.9;
@@ -208,17 +217,19 @@ padding: 12px;
 }
 
 .modal-buttons{
-	position: fixed;
+	position: absolute;
 	top: 38px;
 	right: 60px;
+	z-index: 999999;
 
 }
 
 .modal-author-cont{
-	position: fixed;
+	position: absolute;
 	bottom: 41px;
 	left: 60px;
 	display: block;
+	z-index: 99999;
 }
 
 .modal-userpic img{
@@ -255,22 +266,39 @@ padding: 12px;
 	font-size: 0;
 	background-color: rgba(0,0,0, 0.5);
 	cursor:pointer;
+	text-align: center;
+	@media(max-width: 940px){
+		padding: 20px 15px;
+	}
 }
 
 .gallery-item{
 	width: 31%;
 	margin: 1%;
 	cursor: pointer;
-	
+	@media(max-width: 940px){
+		width: 48%;
+	}
+	@media(max-width: 425px){
+		width: 98%;
+	}
 }
 
 
 .gallery-container{
+	position: relative;
 	text-align: center;
 	padding: 1%;
 	margin: 0 auto;
 	width: 940px;
+	cursor: auto;
 	background-color: #fff;
+	transition: 0.4s;
+	top: 100%;
+	visibility: hidden;
+	@media(max-width: 940px){
+		width: 100%;
+	}
 }
 
 .gallery-close{
@@ -297,4 +325,10 @@ padding: 12px;
 	&:hover{
 		opacity: 0.9;
 	}
+}
+
+
+
+.fixed-buttons{
+	position: fixed;
 }

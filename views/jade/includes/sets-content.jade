@@ -1,5 +1,5 @@
-mixin set(PhotoName, userpic, author, setName, date, gallery)
-	a(href="#" data-arr=gallery).set-block__item.set-js
+mixin set(PhotoName, userpic, author, setName, date)
+	a(href="#").set-block__item.set-js
 		.set-block__self-container
 			img(src=PhotoName).set-block__img
 			.set-block__gradient
@@ -19,7 +19,7 @@ block content
 	.wrapper
 		.set-block
 			.set-block__row-lg
-				+set("../../img/picture6.jpg", "../../img/userpic2.jpg", 'Николай Островский', 'Коллекция №101', "01.01.01", '"../../img/picture6.jpg" , "../../img/picture6.jpg","../../img/picture6.jpg","../../img/picture6.jpg","../../img/picture6.jpg","../../img/picture6.jpg","../../img/picture6.jpg","../../img/picture6.jpg","../../img/picture6.jpg","../../img/picture6.jpg","../../img/picture6.jpg","../../img/picture6.jpg","../../img/picture6.jpg","../../img/picture6.jpg","../../img/picture6.jpg"')
+				+set("../../img/picture6.jpg", "../../img/userpic2.jpg", 'Николай Островский', 'Коллекция №101', "01.01.01")
 				+set("../../img/picture2.jpg", "../../img/userpic3.jpg", 'Николай Островский', 'Коллекция №101', "01.01.01")
 			.set-block__row-sm
 				+set("../../img/picture5.jpg", "../../img/userpic.png", 'Иван Иванов', 'Коллекция №101', "01.01.01")
