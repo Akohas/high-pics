@@ -32,11 +32,64 @@ block header
 			a(href="../../img/picture6.jpg").photo-link-js
 				img(src="../../img/gallery1.jpg").gallery-item
 
-	include includes/header
+	.modal
+	.modal-buttons
+		.modal-like
+			svg 
+				use(xlink:href="#like")
+			span 100
+		.modal-add
+			svg
+				use(xlink:href="#plus")
+		.modal-download
+			span Скачать
+	.modal-close
+		svg
+			use(xlink:href="#plus")
+	a(href="#").modal-author-cont
+		.modal-userpic
+			img(src="../../img/userpic2.jpg")
+		.modal-author Иван Иванович
+	.header-fixed
+		.header-fixed__nav
+			a(href="index.html").header-fixed__nav-item Лучшее
+			a(href="new.html").header-fixed__nav-item Новое
+			a(href="sets.html").header-fixed__nav-item.active-nav Сеты
+		.header-fixed__logo
+			a(href="index.html")
+				img(src="../../img/logo.png").header-fixed__logo-img
+		.header-fixed__form
+			.header-fixed__search-cont
+				input(type="search" placeholder="Поиск фото..." name="search-field" class="header-fixed__search-field")
+				input(type="submit" class="header-fixed__submit" onclick="location.href = 'search.html'")
+				svg.header-fixed__search-icon
+					use(xlink:href="#search")
+			.header-fixed__userpic
+				a(href="#")
+					img(src="../../img/userpic.png")
+			.header-fixed__buttons
+				a(href="sign-in.html")
+					.header-fixed__login Войти
+			
 
 block content
 	.wrapper
 		include includes/sets-content
 block footer
 	include includes/footer
-	
+
+	.footer-fixed
+		a(href="index.html" class="footer-fixed__item-img")
+			<i class="fa fa-home " aria-hidden="true"></i>
+		a(href="new.html" class="footer-fixed__item-img")
+			<i class="fa fa-newspaper-o " aria-hidden="true"></i> 
+		a(href="sets.html" class="footer-fixed__item-img").active-footer-nav
+			<i class="fa fa-archive" aria-hidden="true"></i>
+		a(href="mobile-search.html" class="footer-fixed__item-img")
+			<i class="fa fa-search" aria-hidden="true"></i>
+		a(href="index.html" class="footer-fixed__item-span") Лучшее
+		a(href="new.html" class="footer-fixed__item-span") Новое
+		a(href="sets.html" class="footer-fixed__item-span active-footer-nav" ) Сеты
+		a(href="mobile-search.html" class="footer-fixed__item-span") Поиск
+
+		

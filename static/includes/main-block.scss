@@ -71,7 +71,6 @@
 	background-color: #000;
 	border-radius: 50px;
 	color: #fff;
-	text-transform: uppercase;
 	border-style: none;
 	font-weight: bold;
 	display: block;
@@ -109,10 +108,12 @@
 	    vertical-align: middle;
 	    cursor: pointer;
 	    outline: none;
-	    height: 2em;
-	    font-size: 1em;
+	    height: 2.3em;
+	    font-size: 0.8em;
 	    padding: 0 0.8em;
-	    color: $grey-color;
+	    color: #848383;
+	    transition: 0.3s;
+
   		&:hover{
   			background-color:#ff4c90;
   			border-color:#ff4c90;
@@ -136,6 +137,7 @@
 		}
 		&__like-button svg use{
 			fill: #ff4c90;
+			transition: 0.3s;
 		}
 		&__add-button{
 			vertical-align: middle;
@@ -146,9 +148,9 @@
 			cursor: pointer;
 			outline: none;
 			margin-left: 1em;
-			height: 2em;
+			height: 2.3em;
 			width: 3.25em;
-			font-size: 1em;
+			font-size: 0.8em;
 			&:hover{
 				background-color:#2aaa07;
 				border-color: #2aaa07;
@@ -201,19 +203,17 @@
 	 	vertical-align: middle;
 	 	position: relative;
 		z-index: 10;
-	 	font-size: 0.9em;
-	 	width: 8em;
-	 	height: 2em;
 	 	float: right;
-	 	font-size: 1em;
-	 	
+	 	padding: 0 1.3em;
+    font-size: 0.8em;
+    height: 2.3em;
+    & span{
+    	line-height: 2.1em;
+    }
 	
 	 }
 	 &__button-download svg{
 	 	display: none;
-	 }
-	 &__button-download-text{
-	 	line-height: 1.8em;
 	 }
 	 	&__author-mobile{
 	 		display: none;

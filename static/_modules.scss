@@ -68,11 +68,10 @@ padding: 12px;
 		display: none;
 		
 		}
-		text-transform: uppercase;
 		font-weight: bold;
 		display: inline-block;
 		color: rgba(0,0,0,0.5);
-		font-size: 25px;
+		font-size: 22px;
     margin-right: 8%;
 		text-decoration: none;
 		
@@ -155,12 +154,12 @@ padding: 12px;
 	margin-left: 10px;
 	border-radius: 10px;
 	background-color: #fff;
-	position: absolute;
 	top: 38px;
 	left: 60px;
 	z-index: 9999999;
 	cursor:pointer;
-
+	position: fixed;
+	visibility: hidden;
 	& svg{
 		width: 23px;
 		height: 23px;
@@ -217,19 +216,21 @@ padding: 12px;
 }
 
 .modal-buttons{
-	position: absolute;
 	top: 38px;
 	right: 60px;
+	position: fixed;
+	visibility: hidden;
 	z-index: 999999;
 
 }
 
 .modal-author-cont{
-	position: absolute;
 	bottom: 41px;
 	left: 60px;
 	display: block;
 	z-index: 99999;
+	position: fixed;
+	visibility: hidden;
 }
 
 .modal-userpic img{
@@ -330,5 +331,5 @@ padding: 12px;
 
 
 .fixed-buttons{
-	position: fixed;
+	visibility: visible;
 }
